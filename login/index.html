@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoppe-Login</title>
+    <link rel="stylesheet" href="../assets/css/login.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="icon" type="image/x-icon" href="../assets/images/bag.ico">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="../assets/images/cloudsg.mp4" type="video/mp4" title="Clouds">
+        </video>
+        <div class="container" title="The Shoppe">
+            <h1>The Shoppe</h1>
+            <hr>
+            <div>
+                <form action="../php/login.php" method="post">
+                    <fieldset>
+                        <legend>Customer Login:</legend>
+			            <label for="username">Username:</label><br><input type="text" id="username" name="username" required>
+			            <label for="password">Password:</label><br><input type="password" id="password" name="password" required>
+                        <input type="submit" value="Login">
+                    </fieldset>
+                </form>
+                <p class="register">*Not a customer? : <a href="../register" target="_self" class="custom-link">Register here</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="../assets/images/bag.png" alt="First Image" class="logo" id="logo-image" title="click me?">
+        <img src="../assets/images/bag1.png" alt="Logo" class="logo" style="display:none;" id="nice-image" title="Nice!">
+        <div class="social-media">
+            <a href="https:instagram.com" target="_blank"><img src="../assets/images/instagramg.png" alt="Instagram" title="Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="../assets/images/twitterg.png" alt="Twitter" title="Twitter/x"></a>
+            <a href="https:facebook.com" target="_blank"><img src="../assets/images/facebookg.png" alt="Github" title="facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="../assets/images/youtubeg.png" alt="Youtube" title="Youtube"></a>
+        </div>
+        <p>© 2024 The Shoppe &#128540</p>
+    </footer>
+    <!--<script src="../assets/js/background.js"></script>-->
+</body>
+</html>

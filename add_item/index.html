@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoppe/Register</title>
+    <link rel="stylesheet" href="../assets/css/add_item.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="icon" type="image/x-icon" href="../assets/images/bag.ico">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="../assets/images/cloudsg.mp4" type="video/mp4" title="Clouds">
+        </video>
+        <div class="container" title="The Shoppe">
+            <h1>The Shoppe</h1>
+            <hr>
+            <div>
+              <form action="../php/add_item.php" method="POST" enctype="multipart/form-data">
+              <fieldset>
+                <legend>Add Item:</legend>
+                <label for="name">Name of Item:</label><br><input type="text" name="name" required><br>
+                <label for="description">Description (txt):</label><br><textarea name="description" class="textarea" required></textarea><br>
+                <label for="price">Price ($USD__.__):</label><br><input type="number" step="0.01" name="price" required><br>
+                <label for="stock_quantity">Stock Quantity:</label><br><input type="number" name="stock_quantity" required><br>
+                <label for="weight">Weight (in pounds):</label><br><input type="number" step="0.01" name="weight" required><br>
+                <label for="tags">Tag (one only):</label><br><input type="text" name="tags" required><br>
+                <label for="image" id="custom-upload-btn">Upload Product Image</label><br><input type="file" name="image" id="image" style="display: none;"><br>
+                <label for="image_url">or Image URL:</label><br><input type="text" name="image_url"><br>
+                <input type="submit" value="Add Product/Upload">
+                </fieldset>
+              </form>
+              <a href="../dashboard" target="_self" ><button>dashboard</button></a>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="../assets/images/bag.png" alt="First Image" class="logo" id="logo-image" title="click me?">
+        <img src="../assets/images/bag1.png" alt="Logo" class="logo" style="display:none;" id="nice-image" title="Nice!">
+        <div class="social-media">
+            <a href="https:instagram.com" target="_blank"><img src="../assets/images/instagramg.png" alt="Instagram" title="Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="../assets/images/twitterg.png" alt="Twitter" title="Twitter/x"></a>
+            <a href="https:facebook.com" target="_blank"><img src="../assets/images/facebookg.png" alt="Github" title="facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="../assets/images/youtubeg.png" alt="Youtube" title="Youtube"></a>
+        </div>
+        <p>© 2024 The Shoppe &#128540</p>
+    </footer>
+</body>
+</html>

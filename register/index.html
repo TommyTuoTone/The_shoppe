@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Shoppe-Register</title>
+    <link rel="stylesheet" href="../assets/css/register.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap">
+    <link rel="icon" type="image/x-icon" href="../assets/images/bag.ico">
+</head>
+<body>
+    <div class="video-background">
+        <video autoplay loop muted playsinline>
+            <source src="../assets/images/cloudsg.mp4" type="video/mp4" title="Clouds">
+        </video>
+        <div class="container" title="The Shoppe">
+            <h1>The Shoppe</h1>
+            <hr>
+            <div>
+                <form action="../php/register.php" method="post">
+                    <fieldset>
+                        <legend>Registration:</legend>
+			            <label for="username">Username:</label><br><input type="text" id="username" name="username" required><br>
+                        <label for="email">Email:</label><br><input type="email" id="email" name="email" required><br>
+                        <label for="phone">Phone Number:</label><br><input type="tel" id="phone" name="phone" required><br>
+                        <label for="name">Name:</label><br><input type="text" id="name" name="fullname" required><br>
+                        <label for="password">Password:</label><br><input type="password" id="password" name="password" required><br>
+                        <label for="confirm_password">Confirm Password:</label><br><input type="password" id="confirm_password" name="confirm_password" required><br>
+                        <input type="submit" value="Register">
+                    </fieldset>
+                </form>
+                <p class="login">*Already a customer? : <a href="../login" target="_self" class="custom-link">Login here</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="../assets/images/bag.png" alt="First Image" class="logo" id="logo-image" title="click me?">
+        <img src="../assets/images/bag1.png" alt="Logo" class="logo" style="display:none;" id="nice-image" title="Nice!">
+        <div class="social-media">
+            <a href="https:instagram.com" target="_blank"><img src="../assets/images/instagramg.png" alt="Instagram" title="Instagram"></a>
+            <a href="https://x.com/" target="_blank"><img src="../assets/images/twitterg.png" alt="Twitter" title="Twitter/x"></a>
+            <a href="https:facebook.com" target="_blank"><img src="../assets/images/facebookg.png" alt="Github" title="facebook"></a>
+            <a href="https://www.youtube.com/" target="_blank"><img src="../assets/images/youtubeg.png" alt="Youtube" title="Youtube"></a>
+        </div>
+        <p>© 2024 The Shoppe &#128540</p>
+    </footer>
+    <!--<script src="../assets/js/background.js"></script>-->
+</body>
+</html>
